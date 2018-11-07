@@ -37,7 +37,7 @@ namespace WriteBinEncPDFtoDB.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("AI01")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string sqlServer {
             get {
                 return ((string)(this["sqlServer"]));
@@ -49,7 +49,7 @@ namespace WriteBinEncPDFtoDB.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("ROBOTICS_OPTICS_DEV")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string sqlDBName {
             get {
                 return ((string)(this["sqlDBName"]));
@@ -61,7 +61,7 @@ namespace WriteBinEncPDFtoDB.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("robotuser")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string sqlUsername {
             get {
                 return ((string)(this["sqlUsername"]));
@@ -73,7 +73,7 @@ namespace WriteBinEncPDFtoDB.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("R0b0tik0verlordz")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string sqlPassword {
             get {
                 return ((string)(this["sqlPassword"]));

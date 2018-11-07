@@ -43,7 +43,7 @@ namespace WriteBinEncPDFtoDB
             ImageData imgData = new ImageData();
 
             // Specify the base64 text file location
-            imgData.BinaryFilePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "Test Optic Labels", "SFPRobotBinary.txt");
+            imgData.BinaryFilePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "Test Optic Labels", "Binary.txt");
             imgData.ToStr = File.ReadAllText(imgData.BinaryFilePath);
             WriteToTempFile(imgData);
             ConvertPdfToBmp(imgData);
@@ -67,7 +67,10 @@ namespace WriteBinEncPDFtoDB
                 using (SqlCommand cmd = conn.CreateCommand())
                 {
                     conn.Open();
-                    cmd.CommandText = "update [AOF_LABELS] Set [LABEL_IMAGE] = @labelImage where [LABEL_TYPE] = 'O'";
+                    // Set the correct correct sql command string with parameter
+                    // e.g. update TABLE_NAME Set FIELD_NAME = @labelImage where IDENTIFYING_FIELD = something
+                    // FIELD_NAME should be a varbinary(max) field
+                    cmd.CommandText = "";
                     SqlParameter par = new SqlParameter("@labelImage",
                                                         SqlDbType.VarBinary,
                                                         imgData.Length,

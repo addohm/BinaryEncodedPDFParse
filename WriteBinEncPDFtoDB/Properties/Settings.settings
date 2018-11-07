@@ -6,16 +6,16 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="sqlServer" Type="System.String" Scope="User">
-      <Value Profile="(Default)">AI01</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="sqlDBName" Type="System.String" Scope="User">
-      <Value Profile="(Default)">ROBOTICS_OPTICS_DEV</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="sqlUsername" Type="System.String" Scope="User">
-      <Value Profile="(Default)">robotuser</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="sqlPassword" Type="System.String" Scope="User">
-      <Value Profile="(Default)">R0b0tik0verlordz</Value>
+      <Value Profile="(Default)" />
     </Setting>
   </Settings>
 </SettingsFile>
